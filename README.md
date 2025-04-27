@@ -78,7 +78,7 @@ A Laravel-based health information system that allows doctors to manage clients 
        <br>
 10. Register your first program 
 
-   <img src="/resources/images/programs.png>
+   <img src="/resources/images/programs.png">
 
 11. For interfacing with othe applications for client details 
    - API login
