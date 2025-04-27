@@ -42,7 +42,7 @@ type="submit"
     focus:bg-blue-400 focus:ring 
     focus:ring-blue-300 focus:ring-opacity-50"
     >
-    Register
+    Edit
 </flux:button> 
 <flux:button variant="danger" class="flex-1" type="reset">Cancel</flux:button> 
     </div>  

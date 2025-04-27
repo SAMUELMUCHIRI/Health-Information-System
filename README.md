@@ -32,3 +32,23 @@ A Laravel-based health information system that allows doctors to manage clients 
    ```bash
    git clone https://github.com/SAMUELMUCHIRI/Health-Information-System.git
    cd Health-Information-System
+   composer install
+   npm install 
+   
+2. Make Sqlite Database in the /Database  folder
+3. Create an Enviroment file .env
+4. Create a key
+   ```bash
+   php artisan key:generate
+5. php artisan Serve 
+
+6. You should see 
+<img src="/resources/images/login.png">
+
+7. Go to Login 
+<img src="/resources/images/register.png">
+
+8. After assigning a few clients it should look like this
+
+<img src="/resources/images/homepage.png">
+   
