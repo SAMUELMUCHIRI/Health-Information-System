@@ -1,0 +1,1 @@
+<flux:button variant="danger" icon="arrow-right-start-on-rectangle" class="w-full" wire:confirm="Are you sure you want to log out" wire:click="destroy" >Logout</flux:button>
