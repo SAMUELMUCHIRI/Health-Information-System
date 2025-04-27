@@ -2,6 +2,10 @@
 
 A Laravel-based health information system that allows doctors to manage clients and enroll them in various health programs such as TB, HIV, and Malaria. Built with clean code, API-first design, and extendability in mind.
 
+- [PowerPoint Presentation ](/presentations/demonstration.mp4)
+- [Prototype Demonstration ](/presentations/presentation.pptx)
+
+
 ---
 
 ##  Features
@@ -82,7 +86,13 @@ A Laravel-based health information system that allows doctors to manage clients 
    - Accessing Clienet details
    <img src="/resources/images/apiclientdetails.png">
 
+## Data Security
+- Hashing User passwords
+- Using CSRF tokens on all headers
+- Using Laravel Santum to Authinticate API requests
 
+## Deployment 
+- Upcoming github Workflows
 
 ## Database Design and Relationships
 
@@ -208,7 +218,7 @@ The system uses **Laravel Sanctum** for API authentication. Sanctum provides a s
 The API provides endpoints to manage client data, allowing users to view, create, and update client details. The `Client` model is associated with a `User` model, and each client can be associated with one or more programs.
 
 #### 1. **Get Client Details**
-**Endpoint:** `GET /api/client/details`
+**Endpoint:** `GET /api/client-profile`
 
 **Description**: Fetches the details of the authenticated user's client, including information such as first name, last name, date of birth, gender, national ID, and contact information.
 
