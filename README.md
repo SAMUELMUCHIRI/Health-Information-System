@@ -55,14 +55,23 @@ A Laravel-based health information system that allows doctors to manage clients 
 9. Register your first clients
 
    <img src="/resources/images/client.png">
+   <br>
    - Here you can searc for clients using their first names 
+    <br>
    - Register a new client
+    <br>
    - The clients registered are clickable .
+    <br>
    - On clicking on Mercy we see.
-      <img src="/resources/images/clientdetails.png>
+    <br>
+      <img src="/resources/images/clientdetails.png">
+       <br>
       - Here you can edit the client details 
+       <br>
       - Add programs 
+       <br>
       - View available programs 
+       <br>
 10. Register your first program 
 
    <img src="/resources/images/programs.png>
