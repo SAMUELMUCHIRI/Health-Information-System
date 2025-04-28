@@ -4,7 +4,7 @@
     <div class="bg-white dark:bg-gray-900">
         <div class="flex justify-center h-screen  w-full ">
             <div class="hidden  lg:block lg:w-2/3 h-full flex items-end relative " >
-                <img src="{{ Vite::asset('resources/images/register.webp')}}" alt="doctor.webp" loading="eager" class="dark:brightness-50 brightness-70 h-full object-cover object-top-right w-full absolute z-0">                   
+                <img src="/images/register.webp" alt="doctor.webp" loading="eager" class="dark:brightness-50 brightness-70 h-full object-cover object-top-right w-full absolute z-0">                   
                 <div class="absolute z-10  p-16  rounded-lg h-auto   top-1/2 w-5/6 justify-self-center ">
                     <h2 class=" block text-5xl dark  font-bold text-white ">Health Information System</h2>                         
 
