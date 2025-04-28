@@ -1,9 +1,9 @@
 <x-basic>
     <flux:header container class="bg-zinc-100 dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-700">  
        <div class="lg:block hidden">    
-       <flux:brand href="/" logo="{{Vite::asset('resources/images/logo.webp')}}" name="Health Information System" />
-       </div>
-       <flux:brand href="/" logo="{{Vite::asset('resources/images/logo.webp')}}" class="lg:hidden block" />
+        <flux:brand href="/" logo="/images/logo.webp" name="Health Information System" />
+        </div>
+        <flux:brand href="/" logo="/images/logo.webp" class="lg:hidden block" />
        
 
        <flux:navbar class="-mb-px max-lg:hidden">
