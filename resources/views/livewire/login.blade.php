@@ -6,9 +6,9 @@
     </flux:radio.group>
     <form wire:submit="submit"> 
 
-    <flux:input type="email" id="email" label="Email" wire:model.live.debounce.200m="email" />
+    <flux:input type="email" id="email" label="Email" wire:model.blur="email" />
 
-    <flux:input type="password" id="password" label="Password" wire:model.live.debounce.50ms="password" />
+    <flux:input type="password" id="password" label="Password" wire:model.blur="password" />
     
     <a href="#" class="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">Forgot password?</a>
 

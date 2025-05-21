@@ -4,14 +4,14 @@
     <form wire:submit="register " class="h-1/2"> 
         
     <div class="flex flex-row gap-4">
-    <flux:input size="sm" type="text"  id="firstname" label="firstname" wire:model="firstname" />  
-    <flux:input size="sm" type="text" id="secondname" label="secondname" wire:model="secondname" />  
+    <flux:input size="sm" type="text"  id="firstname" label="firstname" wire:model.blur="firstname" />  
+    <flux:input size="sm" type="text" id="secondname" label="secondname" wire:model.blur="secondname" />  
     </div>      
-    <flux:input size="sm" type="email" id="email" label="Email" wire:model="email" />
-    <flux:input size="sm" type="text" id="text" label="phonenumber" wire:model="phonenumber" /> 
+    <flux:input size="sm" type="email" id="email" label="Email" wire:model.blur="email" />
+    <flux:input size="sm" type="text" id="text" label="phonenumber" wire:model.blur="phonenumber" /> 
     <div class="flex flex-row gap-4">
-    <flux:input size="sm" type="password" id="password" viewable label="Password" wire:model="password" />
-    <flux:input size="sm" type="password"  viewable id="password_confirmation" label="password confirmation" wire:model="password_confirmation" /> 
+    <flux:input size="sm" type="password" id="password" viewable label="Password" wire:model.blur="password" />
+    <flux:input size="sm" type="password"  viewable id="password_confirmation" label="password confirmation" wire:model.blur="password_confirmation" /> 
     </div>   
        
 

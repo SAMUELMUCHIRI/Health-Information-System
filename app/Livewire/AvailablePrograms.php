@@ -31,8 +31,6 @@ class AvailablePrograms extends Component
         $this->assign_program->user_id=Auth::id();
         $this->assign_program->client_id=$this->id;
         $this->assign_program->save();
-
-
     }
 
     
