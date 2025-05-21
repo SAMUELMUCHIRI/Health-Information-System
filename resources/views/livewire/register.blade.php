@@ -4,7 +4,7 @@
     <form wire:submit="register " class="h-1/2"> 
         
     <div class="flex flex-row gap-4">
-    <flux:input size="sm" type="text"  id="firstname" label="firstname" wire:model.blur="firstname" />  
+    <flux:input size="sm" type="text" id="firstname" label="firstname" wire:model.blur="firstname" />  
     <flux:input size="sm" type="text" id="secondname" label="secondname" wire:model.blur="secondname" />  
     </div>      
     <flux:input size="sm" type="email" id="email" label="Email" wire:model.blur="email" />
