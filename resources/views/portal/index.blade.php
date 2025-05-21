@@ -67,7 +67,7 @@
 
                         <flux:callout.text>
                             Create and manage your clients with ease.
-                            <flux:callout.link href="/clients">Click Here</flux:callout.link>
+                            <flux:callout.link href="/client">Click Here</flux:callout.link>
                         </flux:callout.text>
                     </flux:callout>
                             
