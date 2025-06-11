@@ -18,8 +18,8 @@
        </flux:navbar>
        <flux:navbar class="-mb-px block lg:hidden ">
            <flux:navbar.item icon="home" href="/" class="block lg:hidden" />                
-           <flux:navbar.item icon="document-text" href="/program" class="block lg:hidden" />     
-           <flux:navbar.item icon="numbered-list" href="/client" current  class="block lg:hidden" />  
+           <flux:navbar.item icon="document-text" href="/program" current  class="block lg:hidden" />     
+           <flux:navbar.item icon="numbered-list" href="/client"  class="block lg:hidden" />  
        </flux:navbar>
 
        <flux:spacer />

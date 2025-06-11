@@ -17,7 +17,7 @@ class AllPrograms extends Component
         return view('livewire.all-programs',[
             'programs'=>DB::table('programs')
             ->where('user_id',Auth::id())
-            ->paginate(6),
+            ->paginate(4),
         ]);
     }
 }

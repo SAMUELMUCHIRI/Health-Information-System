@@ -45,7 +45,9 @@
         <div class="h-auto mx-auto py-2 lg:py-4 px-6 lg:px-8 flex flex-col lg:flex-row justify-between container  gap-4 lg:gap-8">
             <livewire:greetings>              
         </div>
-        <section id="main_content" class="grid grid-cols-1 lg:grid-cols-2 gap-4  h-2/3 mx-auto px-6 lg:px-8 container">
+
+        <div class="h-3/4 flex flex-col flex-1 mx-auto px-6 lg:px-8 container overflow-auto"> 
+        <section id="main_content" class="grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 h-3/4 ">
             <div class="rounded-lg flex  flex-col justify-items-stretch gap-4 grid-cols-1  order-first lg:order-last">
                 <section id="enrolled-clients" class=" bg-inherit  rounded-lg flex  flex-col justify-items-stretch  grid-cols-1 ">
                 <livewire:enrolled-clients>  
@@ -87,5 +89,10 @@
                 </section>
 
             </div>
+      
+             
         </section >
+               <footer class="text-center absolute  h-auto w-auto inset-x-0 bottom-0 rounded-lg backdrop-blur-md mt-2 p-2  text-black dark:text-white/60 ">&#169; maximus.co.ke</footer>
+        </div>
+       
 </x-basic>

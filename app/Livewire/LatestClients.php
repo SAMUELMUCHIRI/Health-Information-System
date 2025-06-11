@@ -11,16 +11,21 @@ use Illuminate\Support\Facades\DB;
 class LatestClients extends Component
 {
     public $latest_clients;
+      public function updating()
+    {
+        $this->latest_clients=DB::table('clients')->where('user_id',Auth::id())->select('id','firstname','secondname','date_of_birth','gender','contact_info' , 'created_at')->latest()->limit(7)->get();
+        
+    }
     
     
     public function mount()
     {
-        $this->latest_clients=DB::table('clients')->where('user_id',Auth::id())->select('id','firstname','secondname','date_of_birth','gender','contact_info' , 'created_at')->latest()->limit(3)->get();
+        $this->latest_clients=DB::table('clients')->where('user_id',Auth::id())->select('id','firstname','secondname','date_of_birth','gender','contact_info' , 'created_at')->latest()->limit(7)->get();
         
     }
     public function boot() 
     {
-        $this->latest_clients=DB::table('clients')->where('user_id',Auth::id())->select('id','firstname','secondname','date_of_birth','gender','contact_info' ,'created_at')->latest()->limit(3)->get();    }
+        $this->latest_clients=DB::table('clients')->where('user_id',Auth::id())->select('id','firstname','secondname','date_of_birth','gender','contact_info' ,'created_at')->latest()->limit(7)->get();    }
 
  
 

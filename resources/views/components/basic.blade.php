@@ -22,5 +22,6 @@
     {{$slot}}
    
     @fluxScripts
+    
 </body>
 </html>
