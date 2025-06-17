@@ -9,7 +9,7 @@
                 <p class="text-sm text-light">created {{ \Carbon\Carbon::parse($program->created_at)->diffForHumans() }}</p>
             </div>
 
-            <div class="flex flex-row flex-1 gap-1">
+            <div class="flex flex-row flex-1 gap-2">
                 
                 <p>Program Number</p>
                 <p> {{$program->program_number}}</p>
