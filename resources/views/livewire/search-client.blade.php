@@ -16,11 +16,17 @@
                 search
             
             </flux:button> 
-        
+            
 
         
 
     </form>
+    @error('query')
+                <div class="text-red-500 text-sm mt-1">
+                    {{ $message }}
+                </div>                
+            @enderror
+        
     
         @session("results")
             <div class="mt-2  rounded-lg  flex items-center justify-center bg-white/40 dark:bg-white text-red-500">
@@ -32,17 +38,36 @@
                 <p class="dark:text-white text-black"> 
                     Search Results
                 </p>
-                @foreach ($results as $result )  
-                
-                    <a href="/client/{{$result->id}}" class="flex-1 p-1 my-1 gap-1 flex flex-col rounded dark:bg-gray-50 bg-gray-200">
-                        <div class="flex flex-row flex-1 ">
-                            <p class="font-semibold capitalize flex-1 w-full flex flex-row ">
-                                {{$result->firstname}} {{$result->secondname}}  |  {{$result->gender}}  | {{$result->contact_info}}</p>
-                            </p>            
-                        </div>                        
-                    </a>        
-                
-                @endforeach
+
+                   <table class="min-w-full table-auto text-left">
+        <thead class="bg-gray-100 dark:bg-gray-700">
+            <tr>
+                <th class="px-4 py-2">First Name</th>
+                <th class="px-4 py-2">Second Name</th>
+                <
+                <th class="px-4 py-2 hidden lg:block">Contact</th>
+                <th class="px-4 py-2">Check</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($results as $result ) 
+           
+                <tr class="bg-gray-200 dark:bg-gray-50 border-b border-gray-300 dark:border-gray-600 hover:bg-gray-300 transition-all flex-1">
+                    <td class="px-4 py-2 font-semibold capitalize">{{$result->firstname}} </td>
+                    <td class="px-4 py-2"> {{$result->secondname}}  </td>
+                    
+                    <td class="px-4 py-2 hidden lg:block">{{$result->contact_info}}</td>
+                  
+                    <td class="px-4 py-2 text-blue-600 hover:underline cursor-pointer"> <a href="/client/{{$result->id}}" >Check</a></td>
+                </tr>
+               
+            @endforeach
+        </tbody>
+    </table>
+
+
+
+              
             
             @endif
         

@@ -23,7 +23,11 @@ class SearchClient extends Component
 
     public function search()
     {
-        $this->results = Client::where('firstname', 'like',  $this->query . '%')->where('user_id',Auth::id())->get();
+        $this->results = Client::where('firstname', 'like',  $this->query . '%')
+    ->where('user_id', Auth::id())
+    ->limit(10)
+    ->get();
+
         if ($this->results->isEmpty())
         {
             $this->results = null;
